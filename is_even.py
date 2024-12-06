@@ -4,5 +4,7 @@ def proverka(a):
          print('четное:' , a)
     else:
         print('нечетное:', a)
-b=int(input('введите число: ')) #вводим число
-proverka(b) #вызываем функцию 
+
+b = (input('введите число: ').split('.')) #вводим число
+
+proverka(int(b[0])) #вызываем функцию 
